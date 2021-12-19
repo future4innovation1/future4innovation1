@@ -1802,6 +1802,7 @@ section {
   left: 30px;
   bottom: 30px;
   z-index: 995;
+  cursor: pointer;
 }
 
 .chat-bot i {
@@ -2195,4 +2196,16 @@ textarea {
 
 .text-info {
   color: #48b0f7 !important
+}
+
+#chat2{
+  display: none;
+}
+
+#chat3{
+  display: none;
+}
+
+#chat4 {
+  display: none;
 }

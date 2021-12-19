@@ -927,7 +927,7 @@
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <button onclick="openForm()" id="chat-bot" class="chat-bot" style="display: inline!important;"><i class="bx bx-chat"></i></button>
+  <span onclick="openForm()" id="chat-bot" class="chat-bot" style="display: inline!important;"><i class="bx bx-chat"></i></span>
 
   <div class="chat-popup" id="myForm">
     <div class="page-content page-container" id="page-content">
@@ -940,11 +940,21 @@
                           <div class="media media-chat"> <img class="avatar" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="...">
                               <div class="media-body">
                                   <p>Hi</p>
-                                  <p>Welcome to Future4Innovation</p>
-                                  <p>HOw can we assist you?</p>
+                                  <p id="chat1">...</p>
+                                  <p id="chat2">Welcome to Future4Innovation</p>
+                                  <p id="chat3">How can we assist you?</p>
                                   <!-- <p class="meta"><time datetime="2018">23:58</time></p> -->
                               </div>
                           </div>
+                          <div class="media media-chat media-chat-reverse">
+                            <div id="chatUser" class="media-body">
+                            </div>
+                          </div>
+                          <div id="chat4" class="media media-chat"> <img class="avatar" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="...">
+                            <div class="media-body">
+                                <p>Call our expert <a href="tel:1234657890">(123)456-7890</a></p>
+                            </div>
+                        </div>
                           <!-- <div class="media media-meta-day">Today</div>
                           <div class="media media-chat media-chat-reverse">
                               <div class="media-body">
@@ -1000,18 +1010,18 @@
                               <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 2px;"></div>
                           </div>
                       </div>
-                      <div class="publisher bt-1 border-light"> 
+                      <div id="chatBox" class="publisher bt-1 border-light"> 
                         <img class="avatar avatar-xs" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="..."> 
-                        <input class="publisher-input" type="text" placeholder="Write something"> 
+                        <input on id="chat-input" class="publisher-input" type="text" placeholder="Write something"> 
                         <!-- <span class="publisher-btn file-group"> <i class="fa fa-paperclip file-browser"></i> 
                           <input type="file"> 
                         </span>  -->
                         <!-- <a class="publisher-btn" href="#" data-abc="true">
                           <i class="fa fa-smile"></i>
                         </a>  -->
-                        <a class="publisher-btn text-info" href="#" data-abc="true">
+                        <span onclick="chatSubmit()" class="publisher-btn text-info" href="#" data-abc="true">
                           <i class="fa fa-paper-plane"></i>
-                        </a> 
+                        </span> 
                       </div>
                   </div>
               </div>
