@@ -27,6 +27,13 @@ function closeForm() {
 
 function chatSubmit() {
     let input = document.getElementById('chat-input').value;
+    if(input && input.length>0){
+
+    }
+    else{
+        alert("Please Input !")
+        return
+    }
     document.getElementById('chat-input').value = "";
     document.getElementById('chatUser').innerHTML = document.getElementById('chatUser').innerHTML+'<p>'+input+'</p>';
     const myTimeout = setTimeout(responseChat, 1500);
